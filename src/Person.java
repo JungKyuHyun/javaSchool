@@ -12,7 +12,7 @@ public class Person {
 		this.age = age;
 		this.name = name;
 	}
-	
+	//테스트
 	public void PersonInfo() {
 		System.out.println("정보:" + this.name + "," + this.age);
 	}
