@@ -123,6 +123,68 @@ public class Ex04_DataType {
 		// 많이 떨어뜨린다. StringBuilder 컬렉션 등을 사용해야 함.
 		
 		//010-8360-5668
+		
+		String str3 = "1000";
+		String str4 = "10";
+		
+		String result = str3 + str4; // + >> 문자열 + 문자열(결합연산자)
+		System.out.println(result);
+		
+		System.out.println("100"+ 100); // 100100 
+		System.out.println("0"+100);
+		System.out.println(100+100+"100");
+		String result1 = "0" + 100;
+		System.out.println(Integer.parseInt(result1)); // 문자를 정수로 바꾸는 법
+		
+		
+		/*
+		 *  실수(부동소수점)
+		 *  float(4byte)
+		 *  double(8byte) ** 실수의 기본 리터럴은 double (정밀도가 높다: 소수부를 더 많이 표현)
+		 */
+		
+		float f = 3.14f; // 접미사 (F, f)
+		float f2 = 1.123456789f;
+		System.out.println(f2); //1.1234568 // 반올림처리 7자리 표현
+		
+		double d = 1.123456789123456789; // 반올림처리 16자리 표현
+		System.out.println(d);
+		
+		double d2 = 100;
+		System.out.println(d2);
+		//컴파일러는 내부적으로 형변환을 함(암시적 형변환) double d2 = (double) 100;
+		
+		//1234125 >> 숫자 리터럴은 무조건 : int
+		// 1.213124 >> 실수 리터럴은 무조건 : double
+		
+		//Quiz
+		double d3 = 100;
+		int i5 = 100;
+		
+		//int result2 = d3 + i5;
+		//1.데이터 손실 없이 담을 수 있다
+//		double result2 = d3 + i5; 
+		
+		//2. 지금은 맞을 수 있지만, 값이 손실 될 수 있다.
+//		int result2= (int)d3 + i5; // 
+		
+		//3. 값이 손실될 수 있다.
+		int result2 = (int)(d3 + i5);
+		
+		//Today Point
+		//작은 타입 + 큰 타입 => 큰 타입
+		// int + double = double
+		// int + short = int
+		// 타입간 형변환>> 변수가 가지는 값을 보지 말고 변수의 타입으로 판단하자.
+		
+		int i6 =100;
+		byte b2 = (byte)i6; // 데이터 손실이 일어날 수 있다. 가능하면 "작은 타입 + 큰타입"의 경우 큰
+								//타입으로 받자
+		System.out.println(i6);
+		
+		byte b3 = 20;
+		int i7 = b3; // 작은 것을 큰 것에 넣는 건 상관 없지만, 사실은 컴파일러는
+					// int i7 = (int)b3; >> casting
 	}
 
 }
