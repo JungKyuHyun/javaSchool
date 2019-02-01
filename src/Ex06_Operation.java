@@ -56,6 +56,37 @@ public class Ex06_Operation {
 		//float + int = float + float >> 결과 float
 		//long + float = float + float >> 결과 float
 		//float + double = double + double >> 결과 double
+		
+		float num2 = 10.45f;
+		int num3 = 20;
+		
+		// result = num2 + num3
+//		int result5 = (int)(num2+num3); //손실발생
+		
+		float result5 = num2 + num3;
+		
+		// char는 정수타입!!!(내부적으로는 정수값을 가지고 있다)
+		char c2 = '!';
+		char c3 = '!';
+		//result6 = c2 + c3' //!! (x)
+		
+		//char result6 = c2 + c3; // int = int + int
+		int result6 = c2 + c3;
+		System.out.println(result6);
+		System.out.println((char)result6); //A:65 a:97
+		
+		//제어문
+		//중소기업 시험문제(구구단)
+		int sum = 0;
+		for (int j=1; j<=100; j++) {
+			if (j%2 == 0) {
+				sum += j;
+			}
+			else {
+				continue;
+			}
+		}
+		System.out.println(sum);
 	}
 
 }

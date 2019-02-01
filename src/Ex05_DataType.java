@@ -20,6 +20,27 @@ public class Ex05_DataType {
 		char ch = 'A';
 		
 		String str = "홍길동";
+		
+		//Tip) Java 특수문자 사용:   \ 역슬래시
+		
+		char sing = '\''; // "내가 입력한 것은 값이야"라고 인식시켜줘야함
+		
+		System.out.println(sing);
+		
+		//홍"길"동 >> 자체를 데이터(값)
+		
+		String name = "홍\"길\"동";
+		System.out.println(name);
+		
+		//화면에 C:\Temp라는 문자열을 출력해 보세요
+		
+		String add = "C:\\Temp";
+		System.out.println(add);
+		
+		System.out.println(System.getProperty("user.dir"); //??????????
+		
+		
+		
 	}
 
 }
