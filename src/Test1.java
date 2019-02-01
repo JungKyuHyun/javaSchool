@@ -1,7 +1,7 @@
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
-// ÇöÀç °æ·Î Ãß°¡ÇÏ±â 
+// í˜„ìž¬ê²½ë¡œ ì¶”ê°€í•˜ê¸°
 
 public class Test1 {
 	public static void main(String[] args) {
