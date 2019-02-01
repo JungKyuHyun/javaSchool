@@ -36,10 +36,7 @@ public class Ex05_DataType {
 		
 		String add = "C:\\Temp";
 		System.out.println(add);
-		
-		System.out.println(System.getProperty("user.dir"); //??????????
-		
-		
+
 		
 	}
 

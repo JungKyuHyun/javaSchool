@@ -1,8 +1,11 @@
+import java.nio.file.Path;
+import java.nio.file.Paths;
 
 public class Test1 {
-
 	public static void main(String[] args) {
-		System.out.println("hello");
+		Path workingDirectory=Paths.get(".").toAbsolutePath();
+		
+		System.out.println(workingDirectory);
 	}
 
 }
