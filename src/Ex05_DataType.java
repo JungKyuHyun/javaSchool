@@ -37,7 +37,6 @@ public class Ex05_DataType {
 		String add = "C:\\Temp";
 		System.out.println(add);
 
-		
 	}
 
 }
